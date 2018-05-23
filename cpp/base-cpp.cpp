@@ -13,8 +13,7 @@ using namespace std;
 struct pre_ { pre_() { cin.tie(nullptr); ios::sync_with_stdio(false); cout << fixed << setprecision(12); } } pre__;
 //end.template ---}}}
 
-int main()
-{
+int main() {
 
-    return (0);
+  return (0);
 }
