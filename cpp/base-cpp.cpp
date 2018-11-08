@@ -11,6 +11,19 @@ using namespace std;
 //end.DEFINE---}}}
 
 struct pre_ { pre_() { cin.tie(nullptr); ios::sync_with_stdio(false); cout << fixed << setprecision(12); } } pre__;
+
+//DigitNum---{{{
+int DigitNum(int num) {
+  int digit = 0;
+
+  while (num != 0) {
+    num /= 10;
+    digit++;
+  }
+
+  return digit;
+}
+//}}}
 //end.template ---}}}
 
 int main() {
