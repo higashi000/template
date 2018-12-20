@@ -4,6 +4,9 @@ import std.conv;
 import std.string;
 import std.array;
 import std.algorithm;
+import std.typecons;
+import std.math;
+import std.range;
 
 // MIT-License https://github.com/kurokoji/nephele
 class Scanner
@@ -82,6 +85,19 @@ class Scanner
     str ~= s.to!(char[]).strip.split;
   }
 }
+
+//Digit count---{{{
+int DigitNum(int num) {
+  int digit = 0;
+
+  while (num != 0) {
+    num /= 10;
+    digit++;
+  }
+
+  return digit;
+}
+//}}}
 //}}}
 
 void main() {
